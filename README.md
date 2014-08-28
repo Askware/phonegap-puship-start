@@ -1,12 +1,6 @@
-<<<<<<< HEAD
+
 # PhoneGap Build with Push Enabled Starter Application
 
-> A example application to get started with PhoneGap Build and push notifications on Android and iOS.
-=======
-# Hello World PhoneGap Application
-
-> A Hello World application built with PhoneGap
->>>>>>> upstream/master
 
 ## Usage
 
@@ -69,11 +63,4 @@ Replace `<h1>PhoneGap</h1>` with `<h1>Puship Example</h1>`.
 
     $ git tag x.x.x
 
-<<<<<<< HEAD
-[phonegap-start]: http://github.com/phonegap/phonegap-start
-=======
-[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
-[cordova-app]: http://github.com/apache/cordova-app-hello-world
-[nitrous-url]: https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e(https://www.nitrous.io/hack_button?source=embed&runtime=nodejs&repo=phonegap%2Fphonegap-start&file_to_open=README.md
->>>>>>> upstream/master
 
