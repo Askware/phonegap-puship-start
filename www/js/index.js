@@ -71,6 +71,16 @@ var app = {
 				navigator.notification.alert("error during registration: "+ JSON.stringify(pushipresult));
 			}
 		});
+	} else if (Puship.Common.GetCurrentOs()==Puship.OS.WP){
+		Puship.WP.Register(
+		{
+			successCallback: function (pushipresult){
+				navigator.notification.alert("device registered with DeviceId:" + pushipresult.DeviceId);
+			},
+			failCallback: function (pushipresult){
+				navigator.notification.alert("error during registration: "+ JSON.stringify(pushipresult));
+			}
+		});
 	} else {
 		Console.log("Not supported platform");
 	}
@@ -81,7 +91,15 @@ var app = {
 		
 		try
 		{
-			alert(event.notification.Alert);
+	            console.log("Push received");
+	            alert("Message: " + event.notification.Alert);
+	            alert("Sound: " + event.notification.Sound);
+	            alert("Badge: " + event.notification.Badge);
+	            console.log("Param1: " + event.notification.Param1);
+	            console.log("Param2: " + event.notification.Param2);
+	            console.log("Param3: " + event.notification.Param3);
+	            console.log("Param4: " + event.notification.Param4);
+	            console.log("Param5: " + event.notification.Param5);
 		}
 		catch(err)
 		{
